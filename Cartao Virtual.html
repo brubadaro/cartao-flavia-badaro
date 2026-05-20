@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Flávia Badaró — Fonoaudiologia Especializada</title>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <rect width="200" height="200" fill="#FAF6EC"/>
+    <g transform="translate(100 96)" fill="#C9A35B">
+      <rect x="-32" y="-10" width="8" height="20" rx="4"/>
+      <rect x="-18" y="-22" width="8" height="44" rx="4"/>
+      <rect x="-4"  y="-32" width="8" height="64" rx="4"/>
+      <rect x="10"  y="-22" width="8" height="44" rx="4"/>
+      <rect x="24"  y="-10" width="8" height="20" rx="4"/>
+    </g>
+    <text x="100" y="152" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" font-weight="600" fill="#14224A" letter-spacing="2">FLÁVIA BADARÓ</text>
+    <text x="100" y="170" text-anchor="middle" font-family="serif" font-style="italic" font-size="10" fill="#A7843E">Fonoaudiologia especializada</text>
+  </svg>
+</template>
+<meta name="description" content="Cartão virtual de Flávia Badaró — Fonoaudiologia especializada. Agendamento, contatos e endereço." />
+<meta name="theme-color" content="#14224A" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:        #14224A;
+    --navy-deep:   #0E1838;
+    --navy-soft:   #2A3868;
+    --gold:        #C9A35B;
+    --gold-deep:   #A7843E;
+    --gold-soft:   #E6D3A3;
+    --gold-pale:   #F5EBD3;
+    --cream:       #FAF6EC;
+    --paper:       #FFFFFF;
+    --ink-mute:    #5C5C5C;
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(160deg, #F7F2E5 0%, #FAF6EC 35%, #F1E6CC 100%);
+    color: var(--navy);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 14px 60px;
+    line-height: 1.45;
+  }
+
+  /* Decorative background motif */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 8% 12%, rgba(201,163,91,0.18), transparent 35%),
+      radial-gradient(circle at 92% 88%, rgba(20,34,74,0.10), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 440px;
+    background: var(--paper);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.7) inset,
+      0 30px 60px -20px rgba(20,34,74,0.35),
+      0 12px 24px -8px rgba(20,34,74,0.18);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: 32px 28px 24px;
+    background:
+      radial-gradient(ellipse at 80% 0%, rgba(201,163,91,0.22), transparent 60%),
+      radial-gradient(ellipse at 0% 110%, rgba(20,34,74,0.08), transparent 55%),
+      linear-gradient(180deg, #FFFDF8 0%, #FBF4E2 100%);
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+    opacity: .6;
+  }
+
+  .brand-logo {
+    width: 100%;
+    max-width: 320px;
+    margin: -18px auto 4px;
+    padding: 0;
+  }
+  .brand-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;
+  }
+
+  /* sound-wave decorative ornament — pure CSS bars (legacy, unused) */
+  .wave-ornament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 64px;
+    margin: 6px auto 14px;
+  }
+  .wave-ornament span {
+    display: block;
+    width: 7px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #E6C77A 0%, #B98A3E 100%);
+    box-shadow: 0 2px 6px rgba(185,138,62,0.25);
+  }
+  .wave-ornament span:nth-child(1) { height: 22px; }
+  .wave-ornament span:nth-child(2) { height: 36px; }
+  .wave-ornament span:nth-child(3) { height: 54px; }
+  .wave-ornament span:nth-child(4) { height: 64px; }
+  .wave-ornament span:nth-child(5) { height: 50px; }
+  .wave-ornament span:nth-child(6) { height: 62px; }
+  .wave-ornament span:nth-child(7) { height: 40px; }
+  .wave-ornament span:nth-child(8) { height: 26px; }
+  .wave-ornament span:nth-child(9) { height: 18px; }
+
+  .name {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.16em;
+    color: var(--navy);
+    text-transform: uppercase;
+  }
+  .name .accent { color: var(--navy); }
+
+  .credentials {
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .credentials li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    font-weight: 500;
+  }
+  .cred-sep {
+    color: var(--gold);
+    font-weight: 700;
+    transform: translateY(-1px);
+  }
+  .cred-id {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 600;
+  }
+
+  .role {
+    margin: 6px 0 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--gold-deep);
+    letter-spacing: 0.03em;
+  }
+
+  .portrait-wrap {
+    position: relative;
+    width: 168px;
+    height: 168px;
+    margin: 6px auto 8px;
+  }
+  .portrait-ring {
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: conic-gradient(from 220deg, var(--gold) 0deg, var(--gold-soft) 90deg, var(--gold) 180deg, var(--gold-deep) 270deg, var(--gold) 360deg);
+    padding: 3px;
+    box-shadow: 0 12px 28px -10px rgba(167,132,62,0.55);
+  }
+  .portrait-ring::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: var(--paper);
+  }
+  .portrait {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+    box-shadow: 0 8px 20px rgba(20,34,74,0.15);
+  }
+  .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .credential {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--navy-soft);
+    margin-bottom: 4px;
+  }
+  .credential::before,
+  .credential::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  /* ---------- SECTIONS ---------- */
+  .section {
+    padding: 22px 22px 6px;
+  }
+
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 600;
+    margin: 8px 4px 14px;
+  }
+  .section-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-soft), transparent);
+  }
+
+  .tile-grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .tile {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--paper);
+    border: 1px solid #ECE2C9;
+    border-radius: 16px;
+    color: var(--navy);
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
+    position: relative;
+  }
+  .tile:hover {
+    transform: translateY(-1px);
+    border-color: var(--gold);
+    background: #FFFDF6;
+    box-shadow: 0 10px 22px -12px rgba(167,132,62,0.4);
+  }
+  .tile:active {
+    transform: translateY(0);
+    background: var(--gold-pale);
+  }
+
+  .tile-icon {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(150deg, #F4E4BB 0%, #E0C281 100%);
+    color: var(--navy-deep);
+    box-shadow: inset 0 0 0 1px rgba(167,132,62,0.35),
+                0 4px 8px -4px rgba(167,132,62,0.45);
+  }
+  .tile-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--navy-deep);
+    stroke-width: 1.7;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .tile-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .tile-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .tile-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+    letter-spacing: 0.01em;
+    word-break: break-word;
+  }
+  .tile-value small {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--ink-mute);
+    margin-top: 2px;
+    letter-spacing: 0.005em;
+  }
+
+  .tile-arrow {
+    flex: 0 0 auto;
+    color: var(--gold);
+    font-size: 18px;
+    opacity: .65;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .tile:hover .tile-arrow {
+    transform: translateX(3px);
+    opacity: 1;
+  }
+
+  /* Address tile is taller */
+  .tile.address .tile-value {
+    line-height: 1.55;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tile.address .tile-value strong {
+    display: block;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+
+  /* Social row */
+  .social-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .social-tile {
+    padding: 14px 12px;
+    text-align: center;
+    background: var(--paper);
+    border: 1px solid #ECE2C9;
+    border-radius: 16px;
+    color: var(--navy);
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .social-tile:hover {
+    transform: translateY(-1px);
+    border-color: var(--gold);
+    background: #FFFDF6;
+    box-shadow: 0 10px 22px -12px rgba(167,132,62,0.4);
+  }
+  .social-icon {
+    width: 38px;
+    height: 38px;
+    margin: 0 auto 8px;
+    border-radius: 11px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(150deg, #F4E4BB 0%, #E0C281 100%);
+    box-shadow: inset 0 0 0 1px rgba(167,132,62,0.35);
+  }
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--navy-deep);
+    stroke-width: 1.7;
+    fill: none;
+  }
+  .social-label {
+    font-size: 9px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    font-weight: 600;
+  }
+  .social-value {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 2px;
+    color: var(--navy);
+  }
+
+  /* Unified Instagram card */
+  .ig-card {
+    background: var(--paper);
+    border: 1px solid #ECE2C9;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .ig-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: linear-gradient(180deg, #FFFDF6 0%, #FBF3DE 100%);
+    border-bottom: 1px solid #EEE3C9;
+  }
+  .ig-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(150deg, #F4E4BB 0%, #E0C281 100%);
+    box-shadow: inset 0 0 0 1px rgba(167,132,62,0.35),
+                0 4px 8px -4px rgba(167,132,62,0.45);
+  }
+  .ig-logo svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--navy-deep);
+    stroke-width: 1.7;
+    fill: none;
+  }
+  .ig-title {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--gold-deep);
+  }
+  .ig-handles {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ig-handle {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: background .15s ease, color .15s ease;
+  }
+  .ig-handle + .ig-handle {
+    border-top: 1px solid #F2EAD3;
+  }
+  .ig-handle:hover { background: #FFFDF6; }
+  .ig-handle:active { background: var(--gold-pale); }
+  .ig-at {
+    color: var(--gold-deep);
+    font-weight: 600;
+    margin-right: 1px;
+  }
+  .ig-name { flex: 1; }
+  .ig-arrow {
+    color: var(--gold);
+    font-size: 18px;
+    opacity: .65;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .ig-handle:hover .ig-arrow {
+    transform: translateX(3px);
+    opacity: 1;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    margin-top: 18px;
+    padding: 18px 24px 26px;
+    text-align: center;
+    background: linear-gradient(180deg, #FFFDF8, #F8EFD8);
+    border-top: 1px solid #ECE2C9;
+  }
+  .save-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: var(--navy);
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 10px 22px -10px rgba(20,34,74,0.55);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .save-btn:hover {
+    background: var(--navy-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px -12px rgba(20,34,74,0.65);
+  }
+  .save-btn svg {
+    width: 16px; height: 16px;
+    stroke: #fff; stroke-width: 1.8; fill: none;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .hint {
+    margin-top: 14px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    opacity: .75;
+  }
+
+  /* responsive scaling for small phones */
+  @media (max-width: 360px) {
+    .name { font-size: 24px; letter-spacing: 0.12em; }
+    .role { font-size: 16px; }
+    .portrait-wrap { width: 148px; height: 148px; }
+  }
+</style>
+</head>
+<body>
+  <main class="card" aria-label="Cartão virtual Flávia Badaró">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="portrait-wrap">
+        <div class="portrait-ring"></div>
+        <div class="portrait">
+          <img src="assets/photo.png" alt="Flávia Badaró" />
+        </div>
+      </div>
+
+      <div class="brand-logo">
+        <img src="assets/logo.jpeg" alt="Flávia Badaró — Fonoaudiologia especializada" />
+      </div>
+      <ul class="credentials">
+        <li><span class="cred-role">Fonoaudióloga</span><span class="cred-sep">·</span><span class="cred-id">CRFa 10.492</span></li>
+        <li><span class="cred-role">Fisioterapeuta</span><span class="cred-sep">·</span><span class="cred-id">CREFITO 157.220-F</span></li>
+      </ul>
+    </header>
+
+    <!-- CONTATOS -->
+    <section class="section">
+      <div class="section-label">Contato</div>
+      <div class="tile-grid">
+
+        <a class="tile" href="https://wa.me/5511990227642" target="_blank" rel="noopener">
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 2.5h8a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2Z"/><path d="M11 18.5h2"/><path d="M6 5.5h12"/></svg>
+          </div>
+          <div class="tile-body">
+            <div class="tile-label">Agendamento</div>
+            <div class="tile-value">(11) 99022-7642</div>
+          </div>
+          <div class="tile-arrow">›</div>
+        </a>
+
+        <a class="tile" href="tel:+551155751710">
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 4.5h3l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5L14.5 14l5 2v3a2 2 0 0 1-2 2A14 14 0 0 1 3 6.5a2 2 0 0 1 2-2Z"/></svg>
+          </div>
+          <div class="tile-body">
+            <div class="tile-label">Telefone</div>
+            <div class="tile-value">(11) 5575-1710</div>
+          </div>
+          <div class="tile-arrow">›</div>
+        </a>
+
+        <a class="tile" href="tel:+5512981442255">
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+          </div>
+          <div class="tile-body">
+            <div class="tile-label">Celular</div>
+            <div class="tile-value">(12) 98144-2255</div>
+          </div>
+          <div class="tile-arrow">›</div>
+        </a>
+
+        <a class="tile" href="https://atletasdavoz.com.br" target="_blank" rel="noopener">
+          <div class="tile-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+          </div>
+          <div class="tile-body">
+            <div class="tile-label">Site</div>
+            <div class="tile-value">atletasdavoz.com.br</div>
+          </div>
+          <div class="tile-arrow">›</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ENDEREÇO -->
+    <section class="section">
+      <div class="section-label">Consultório</div>
+      <a class="tile address"
+         href="https://www.google.com/maps/search/?api=1&query=Rua+Machado+Bittencourt+361+Vila+Clementino+São+Paulo+SP+04044-001"
+         target="_blank" rel="noopener">
+        <div class="tile-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-7.2-7-12a7 7 0 0 1 14 0c0 4.8-7 12-7 12Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        </div>
+        <div class="tile-body">
+          <div class="tile-label">Endereço</div>
+          <div class="tile-value">
+            <strong>Rua Machado Bittencourt, 361</strong>
+            10º andar — Conj. 1001<br/>
+            Vila Clementino · CEP 04044-001<br/>
+            São Paulo — SP
+          </div>
+        </div>
+        <div class="tile-arrow">›</div>
+      </a>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="section">
+      <div class="section-label">Instagram</div>
+      <div class="ig-card">
+        <div class="ig-header">
+          <div class="ig-logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div class="ig-title">Siga nas redes</div>
+        </div>
+        <div class="ig-handles">
+          <a class="ig-handle" href="https://instagram.com/flaviabadaro_" target="_blank" rel="noopener">
+            <span class="ig-at">@</span><span class="ig-name">flaviabadaro_</span>
+            <span class="ig-arrow">›</span>
+          </a>
+          <a class="ig-handle" href="https://instagram.com/atletasdavoz" target="_blank" rel="noopener">
+            <span class="ig-at">@</span><span class="ig-name">atletasdavoz</span>
+            <span class="ig-arrow">›</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a class="save-btn" href="flavia-badaro.vcf" download>
+        <svg viewBox="0 0 24 24"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+        Salvar contato
+      </a>
+      <div class="hint">Toque nos ícones para acessar</div>
+    </footer>
+  </main>
+
+<script>
+  // Build a vCard on-the-fly for the "Salvar contato" button
+  (function(){
+    const vcard = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'N:Badaró;Flávia;;;',
+      'FN:Flávia Badaró',
+      'TITLE:Fonoaudióloga (CRFa 10.492) / Fisioterapeuta (CREFITO 157.220-F)',
+      'ORG:Atletas da Voz',
+      'TEL;TYPE=CELL:+5512981442255',
+      'TEL;TYPE=WORK,VOICE:+551155751710',
+      'TEL;TYPE=WORK,CELL:+5511990227642',
+      'URL:https://atletasdavoz.com.br',
+      'X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/flaviabadaro_',
+      'X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/atletasdavoz',
+      'ADR;TYPE=WORK:;;Rua Machado Bittencourt, 361 - 10º andar - Conj. 1001;São Paulo;SP;04044-001;Brasil',
+      'END:VCARD'
+    ].join('\r\n');
+    const blob = new Blob([vcard], {type: 'text/vcard;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const btn = document.querySelector('.save-btn');
+    if (btn) btn.setAttribute('href', url);
+  })();
+</script>
+</body>
+</html>
